@@ -11,13 +11,13 @@
         <!--메모 목록-->
         <scene sceneID="sGm-zl-jXJ">
             <objects>
-                <tableViewController id="0D2-0S-BUj" sceneMemberID="viewController">
+                <tableViewController id="0D2-0S-BUj" customClass="MemoListTableViewController" customModule="BasicPhotoMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W6u-nT-DDQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCell" rowHeight="80" id="hTg-Nd-CMm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCell" rowHeight="80" id="hTg-Nd-CMm" customClass="MemoTableViewCell" customModule="BasicPhotoMemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hTg-Nd-CMm" id="rm3-9i-8Yv">
@@ -65,7 +65,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="8bz-LM-x3o">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="8bz-LM-x3o" customClass="MemoTableViewCell" customModule="BasicPhotoMemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8bz-LM-x3o" id="NIM-J8-Ol8">
@@ -146,7 +146,7 @@
         <!--메모 작성-->
         <scene sceneID="vUi-Xx-ahr">
             <objects>
-                <viewController id="B9F-lr-Ezj" sceneMemberID="viewController">
+                <viewController id="B9F-lr-Ezj" customClass="MemoFormViewController" customModule="BasicPhotoMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hhf-T4-2EW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,19 +181,31 @@
                     </view>
                     <navigationItem key="navigationItem" title="메모 작성" id="kKI-cw-4Hc">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="1Kv-Mk-BQC"/>
-                            <barButtonItem title="저장" id="hcd-fw-Ubw"/>
+                            <barButtonItem systemItem="camera" id="1Kv-Mk-BQC">
+                                <connections>
+                                    <action selector="pick:" destination="B9F-lr-Ezj" id="zbj-IP-X5g"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="저장" id="hcd-fw-Ubw">
+                                <connections>
+                                    <action selector="save:" destination="B9F-lr-Ezj" id="0na-tL-OrH"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contents" destination="iJD-he-Yei" id="P1x-z7-ZwA"/>
+                        <outlet property="preview" destination="BFs-KO-UeS" id="SEb-cP-VSU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tL2-N4-zyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="989.60000000000002" y="94.902548725637189"/>
         </scene>
-        <!--View Controller-->
+        <!--Memo Read View Controller-->
         <scene sceneID="69l-wp-rrZ">
             <objects>
-                <viewController id="rQm-lw-PM3" sceneMemberID="viewController">
+                <viewController id="rQm-lw-PM3" customClass="MemoReadViewController" customModule="BasicPhotoMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87I-is-lLa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

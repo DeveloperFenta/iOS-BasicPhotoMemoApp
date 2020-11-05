@@ -13,6 +13,11 @@
 		3884BA7E2552BC5800A53FCF /* BasicPhotoMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3884BA7C2552BC5800A53FCF /* BasicPhotoMemo.xcdatamodeld */; };
 		3884BA802552BC5900A53FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3884BA7F2552BC5900A53FCF /* Assets.xcassets */; };
 		3884BA832552BC5900A53FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3884BA812552BC5900A53FCF /* LaunchScreen.storyboard */; };
+		3896311B2553C9A1002D3330 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896311A2553C9A1002D3330 /* MemoListTableViewController.swift */; };
+		3896311E2553D6CC002D3330 /* MemoFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896311D2553D6CC002D3330 /* MemoFormViewController.swift */; };
+		389631212553D6DA002D3330 /* MemoReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389631202553D6DA002D3330 /* MemoReadViewController.swift */; };
+		389631242553D70B002D3330 /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389631232553D70B002D3330 /* MemoTableViewCell.swift */; };
+		389631272553EB3C002D3330 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389631262553EB3C002D3330 /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		3884BA7F2552BC5900A53FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3884BA822552BC5900A53FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3884BA842552BC5900A53FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3896311A2553C9A1002D3330 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
+		3896311D2553D6CC002D3330 /* MemoFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormViewController.swift; sourceTree = "<group>"; };
+		389631202553D6DA002D3330 /* MemoReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadViewController.swift; sourceTree = "<group>"; };
+		389631232553D70B002D3330 /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
+		389631262553EB3C002D3330 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				3884BA732552BC5800A53FCF /* AppDelegate.swift */,
 				3884BA752552BC5800A53FCF /* SceneDelegate.swift */,
 				3884BA792552BC5800A53FCF /* Main.storyboard */,
+				389631262553EB3C002D3330 /* MemoData.swift */,
+				3896311A2553C9A1002D3330 /* MemoListTableViewController.swift */,
+				3896311D2553D6CC002D3330 /* MemoFormViewController.swift */,
+				389631202553D6DA002D3330 /* MemoReadViewController.swift */,
+				389631232553D70B002D3330 /* MemoTableViewCell.swift */,
 				3884BA7F2552BC5900A53FCF /* Assets.xcassets */,
 				3884BA812552BC5900A53FCF /* LaunchScreen.storyboard */,
 				3884BA842552BC5900A53FCF /* Info.plist */,
@@ -137,9 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389631212553D6DA002D3330 /* MemoReadViewController.swift in Sources */,
+				389631272553EB3C002D3330 /* MemoData.swift in Sources */,
+				3896311E2553D6CC002D3330 /* MemoFormViewController.swift in Sources */,
 				3884BA7E2552BC5800A53FCF /* BasicPhotoMemo.xcdatamodeld in Sources */,
+				389631242553D70B002D3330 /* MemoTableViewCell.swift in Sources */,
 				3884BA742552BC5800A53FCF /* AppDelegate.swift in Sources */,
 				3884BA762552BC5800A53FCF /* SceneDelegate.swift in Sources */,
+				3896311B2553C9A1002D3330 /* MemoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
