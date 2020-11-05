@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3884BA742552BC5800A53FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884BA732552BC5800A53FCF /* AppDelegate.swift */; };
 		3884BA762552BC5800A53FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884BA752552BC5800A53FCF /* SceneDelegate.swift */; };
-		3884BA782552BC5800A53FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884BA772552BC5800A53FCF /* ViewController.swift */; };
 		3884BA7B2552BC5800A53FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3884BA792552BC5800A53FCF /* Main.storyboard */; };
 		3884BA7E2552BC5800A53FCF /* BasicPhotoMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3884BA7C2552BC5800A53FCF /* BasicPhotoMemo.xcdatamodeld */; };
 		3884BA802552BC5900A53FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3884BA7F2552BC5900A53FCF /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		3884BA702552BC5800A53FCF /* BasicPhotoMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPhotoMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3884BA732552BC5800A53FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3884BA752552BC5800A53FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3884BA772552BC5800A53FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3884BA7A2552BC5800A53FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3884BA7D2552BC5800A53FCF /* BasicPhotoMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasicPhotoMemo.xcdatamodel; sourceTree = "<group>"; };
 		3884BA7F2552BC5900A53FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				3884BA732552BC5800A53FCF /* AppDelegate.swift */,
 				3884BA752552BC5800A53FCF /* SceneDelegate.swift */,
-				3884BA772552BC5800A53FCF /* ViewController.swift */,
 				3884BA792552BC5800A53FCF /* Main.storyboard */,
 				3884BA7F2552BC5900A53FCF /* Assets.xcassets */,
 				3884BA812552BC5900A53FCF /* LaunchScreen.storyboard */,
@@ -140,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3884BA782552BC5800A53FCF /* ViewController.swift in Sources */,
 				3884BA7E2552BC5800A53FCF /* BasicPhotoMemo.xcdatamodeld in Sources */,
 				3884BA742552BC5800A53FCF /* AppDelegate.swift in Sources */,
 				3884BA762552BC5800A53FCF /* SceneDelegate.swift in Sources */,
@@ -299,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fenta.BasicPhotoMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fenta.BasicPhotoMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
