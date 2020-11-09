@@ -8,6 +8,12 @@
 import UIKit
 
 class MemoListTableViewController: UITableViewController {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +27,26 @@ class MemoListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return appDelegate.memoList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row = appDelegate.memoList[indexPath.row]
+        
+        let cellId = row.image == nil ? "memoCell" : "memoCellWithImage"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MemoTableViewCell
+        
+        cell.subject?.text = row.title
+        cell.contents?.text = row.contents
+        cell.img?.image = row.image
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        cell.regdate?.text = formatter.string(from: row.regdate!)
+        
+        return cell
     }
 
     /*

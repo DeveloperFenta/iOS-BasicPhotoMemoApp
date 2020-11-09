@@ -28,7 +28,7 @@ class MemoFormViewController: UIViewController {
         
         let data = MemoData()
         
-        data.title = self.subject
+        data.title = subject
         data.contents = contents.text
         data.image = preview.image
         data.regdate = Date()
@@ -51,6 +51,7 @@ class MemoFormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        contents.delegate = self
         // Do any additional setup after loading the view.
     }
     

@@ -12,7 +12,7 @@
         <scene sceneID="sGm-zl-jXJ">
             <objects>
                 <tableViewController id="0D2-0S-BUj" customClass="MemoListTableViewController" customModule="BasicPhotoMemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W6u-nT-DDQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W6u-nT-DDQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,6 +64,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="gpS-Pw-KIf" secondAttribute="bottom" constant="10" id="sq2-Uz-56F"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="WHp-GS-Eji" id="2ri-5E-rbe"/>
+                                    <outlet property="regdate" destination="gpS-Pw-KIf" id="C4B-27-FVl"/>
+                                    <outlet property="subject" destination="9yJ-p8-rnB" id="LcP-my-SJX"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="8bz-LM-x3o" customClass="MemoTableViewCell" customModule="BasicPhotoMemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -121,6 +126,12 @@
                                         <constraint firstItem="chB-ih-6EU" firstAttribute="trailing" secondItem="NIM-J8-Ol8" secondAttribute="trailingMargin" id="upv-su-1kD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="dZ8-Mu-Apk" id="Qc3-Xs-jHU"/>
+                                    <outlet property="img" destination="Dry-PR-bGk" id="FHO-n4-6rC"/>
+                                    <outlet property="regdate" destination="chB-ih-6EU" id="BPW-7f-2Sf"/>
+                                    <outlet property="subject" destination="9Ch-Cc-gim" id="z2E-zQ-uwQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
